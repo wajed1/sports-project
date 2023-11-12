@@ -1,29 +1,27 @@
-import React, { useEffect, useState } from "react"
-import axios from "axios"
-import { useNavigate, Link } from "react-router-dom"
+import React, {useEffect,useState} from 'react';
 import './Login.css'
+import axios from "axios"
+import { Form, useNavigate} from "react-router-dom"
 
 
-function SignUp() {
+function Login(){
+    const [username, setUsername] = useState('');
+    const [pass, setPass] = useState('');
     const history=useNavigate();
-
-    const [username,setUsername]=useState('')
-    const [pass,setPass]=useState('')
-
     async function submit(e){
         e.preventDefault();
 
         try{
 
-            await axios.post("http://localhost:8000/signup",{
+            await axios.post("http://localhost:8000/",{
                 username,pass
             })
             .then(res=>{
                 if(res.data==="exist"){
-                    alert("User already exists")
+                    history("/home",{state:{id:username}})
                 }
                 else if(res.data==="notexist"){
-                    history("/home",{state:{id:username}})
+                    alert("User have not sign up")
                 }
             })
             .catch(e=>{
@@ -41,17 +39,17 @@ function SignUp() {
 
     return(
         <div className='cover'>
-            <h1 className='Login'>SignUp</h1>
-            <form action="POST">
+            <h1 className='Login'>Login</h1>
+            <form action='POST'>
             <input className='input-field ' value={username} type="text" placeholder='username' onChange={(e) => setUsername(e.target.value)}/>
             <input className='input-field ' value={pass} type="password" placeholder='password' onChange={(e) => setPass(e.target.value)}/>
-            <button className='login-button' type='submit' onClick={submit}>Sign Up</button>
+            <button className='login-button' type='submit' onClick={submit}>Log In</button>
             </form>
             <p className='link'>
-                 Already have an account? <a href='/Login'>Login</a> 
+                <a href='/'>forgot password ?  </a> Or <a href='/SignUp'>Sign Up</a> 
             </p>
         </div>
     );
 }
 
-export default SignUp;
+export default Login;

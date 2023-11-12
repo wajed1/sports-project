@@ -10,7 +10,7 @@ function Navbar() {
         <li><Link className='a' to="/">Home</Link></li>
         <li><Link className='a' to="/about">About</Link></li>
         <li><Link className='a' to="/contact">Contact</Link></li>
-        <li><Link className='a' to="/signup">Sign Up</Link></li>
+        <li><Link className='a' to="/login">Log In</Link></li>
       </ul>
     </nav>
   );
