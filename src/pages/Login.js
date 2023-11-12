@@ -21,7 +21,7 @@ function Login(){
                     history("/home",{state:{id:username}})
                 }
                 else if(res.data==="notexist"){
-                    alert("User have not sign up")
+                    alert("User did not sign up or the password is wrong")
                 }
             })
             .catch(e=>{

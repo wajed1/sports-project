@@ -18,8 +18,9 @@ app.post("/",async(req,res)=>{
 
     try{
         const check=await collection.findOne({username:username})
+        const check2=await collection.findOne({pass:pass})
 
-        if(check){
+        if(check && check2){
             res.json("exist")
         }
         else{

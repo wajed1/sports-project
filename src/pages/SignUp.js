@@ -48,7 +48,7 @@ function SignUp() {
             <button className='login-button' type='submit' onClick={submit}>Sign Up</button>
             </form>
             <p className='link'>
-                 Already have an account? <a href='/Login'>Login</a> 
+                 Already have an account? <a href='/'>Login</a> 
             </p>
         </div>
     );

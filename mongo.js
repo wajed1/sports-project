@@ -19,6 +19,6 @@ const newSchema=new mongoose.Schema({
     }
 })
 
-const collection = mongoose.model("login-signup",newSchema)
+const collection = mongoose.model("login-signups",newSchema)
 
 module.exports=collection
