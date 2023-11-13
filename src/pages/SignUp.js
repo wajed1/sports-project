@@ -41,15 +41,14 @@ function SignUp() {
 
     return(
         <div className='cover'>
-            <h1 className='Login'>SignUp</h1>
+            <h1 className='Login'>Sign Up</h1>
             <form action="POST">
             <input className='input-field ' value={username} type="text" placeholder='username' onChange={(e) => setUsername(e.target.value)}/>
             <input className='input-field ' value={pass} type="password" placeholder='password' onChange={(e) => setPass(e.target.value)}/>
             <button className='login-button' type='submit' onClick={submit}>Sign Up</button>
             </form>
-            <p className='link'>
-                 Already have an account? <a href='/'>Login</a> 
-            </p>
+            <p> Already have an account?</p>
+            <a className='link' href='/'>Login</a> 
         </div>
     );
 }

@@ -45,9 +45,8 @@ function Login(){
             <input className='input-field ' value={pass} type="password" placeholder='password' onChange={(e) => setPass(e.target.value)}/>
             <button className='login-button' type='submit' onClick={submit}>Log In</button>
             </form>
-            <p className='link'>
-                <a href='/'>forgot password ?  </a> Or <a href='/SignUp'>Sign Up</a> 
-            </p>
+                <a className='link' href='/'>Forgot password?</a>
+                <a className='link' href='/SignUp'>Sign Up instead</a>   
         </div>
     );
 }
