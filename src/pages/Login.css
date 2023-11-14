@@ -8,6 +8,7 @@
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
+    margin-top: 100px;
 }
 
 .input-field {
@@ -33,13 +34,66 @@
     background-color: #005b8c;
     }
   
-  
+.cover p{
+    margin-top: 0px;
+}
 
 .link{
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.link1{
+    color: #0077b6;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.link2{
     color: #0077b6;
     text-decoration: none;
     margin-bottom: 5px;
     margin-top: 10px;
 }
-
-
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+  
+  .footer a {
+    margin-bottom: 15px;
+    /* Adjust as needed for spacing between links */
+    text-decoration: none;
+    color: white;
+  }
+  
+  .quick {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18%;
+    margin-bottom: 10px;
+  }
+  
+  .contact ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .contact li{
+    margin-bottom: 10px;
+  }.follow{
+    margin-left: 14%;
+  }
+  .follow ul{
+    display: flex;
+    flex-direction: column;
+  }
