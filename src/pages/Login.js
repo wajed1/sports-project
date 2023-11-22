@@ -18,7 +18,7 @@ function Login() {
             })
                 .then(res => {
                     if (res.data === "exist") {
-                        history("/home", { state: { id: username } })
+                        history("/hero", { state: { id: username } })
                     }
                     else if (res.data === "notexist") {
                         alert("User did not sign up or the password is wrong")
