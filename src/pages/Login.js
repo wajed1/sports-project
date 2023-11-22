@@ -8,6 +8,7 @@ function Login() {
     const [username, setUsername] = useState('');
     const [pass, setPass] = useState('');
     const history = useNavigate();
+    const [token, setToken] = useState('');
     async function submit(e) {
         e.preventDefault();
 
@@ -17,7 +18,11 @@ function Login() {
                 username, pass
             })
                 .then(res => {
-                    if (res.data === "exist") {
+                    if (res.data.status === "exist") {
+                        const token = res.data.token;
+                        setToken(token);
+                        localStorage.setItem('token', token);
+                        console.log(token);
                         history("/hero", { state: { id: username } })
                     }
                     else if (res.data === "notexist") {

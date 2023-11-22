@@ -5,6 +5,7 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
+const jwt = require('jsonwebtoken');
 
 
 
@@ -21,7 +22,8 @@ app.post("/",async(req,res)=>{
         const check2=await collection.findOne({pass:pass})
 
         if(check && check2){
-            res.json("exist")
+            const token = jwt.sign({ check: check.username }, 'amcywbhajgdamajacnrlbmhalpg', { expiresIn: '1h' });
+            res.json({status: "exist", token: token})
         }
         else{
             res.json("notexist")
