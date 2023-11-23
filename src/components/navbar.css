@@ -1,0 +1,16 @@
+/* Add this style to your stylesheet */
+.btn {
+    background-color: greenyellow;
+    color: dark; /* Set text color to white for better visibility */
+    padding: 7px 10px; /* Add padding for a better visual appearance */
+    border: none; /* Remove border for a clean look */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+  
+  /* Optional: Add styles for hover and focus states */
+  .btn:hover,
+  .btn:focus {
+    background-color: greenyellow;
+    /* Add any additional styles for hover/focus state */
+  }
+  

@@ -44,7 +44,7 @@ function Contact() {
                 <input type='text' name='from_name' placeholder='User name' value={username} onChange={(e) => setUsername(e.target.value)} required></input>
                 <input type='text' name='from_email' placeholder='Email Adresse' value={email} onChange={(e) => setEmail(e.target.value)} required></input>
                 <textarea name='message' rows='4' placeholder="How can we help you?" value={message} onChange={(e) => setMessage(e.target.value)}required></textarea>
-                <button type='submit'>Send Message</button>
+                <button className="btn" type='submit'>Send Message</button>
             </form>
         </div>
         </section>
