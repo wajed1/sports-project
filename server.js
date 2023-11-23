@@ -1,10 +1,13 @@
 const express = require("express")
 const collection = require("./mongo")
+const Product = require("./pdata")
 const cors = require("cors")
+const bodyParser = require('body-parser');
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
+app.use(bodyParser.json());
 const jwt = require('jsonwebtoken');
 
 
@@ -63,6 +66,22 @@ app.post("/signup",async(req,res)=>{
     }
 
 })
+
+app.post('/product', async (req, res) => {
+    try {
+      const cart = req.body.cart;
+  
+      // Save each product in the cart to the database
+      await Promise.all(cart.map(async (product) => {
+        await Product.create(product);
+      }));
+  
+      res.status(201).json({ message: 'Checkout successful' });
+    } catch (error) {
+      console.error('Error during checkout:', error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
 
 app.listen(8000,()=>{
     console.log("port connected");
