@@ -6,20 +6,11 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
-import bg from "./images/apple-splash.png"
 import Hero from './pages/Hero'
 
 function App() {
 
-  const styles = {
-    backgroundImage: `url(${bg})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-  };
-
-  return (
-    <main className='h-screen w-screen' style={styles}>
+  return ( 
     <Router>
       <Navbar />
       <Routes>
@@ -31,7 +22,6 @@ function App() {
         <Route path="/signup" element={<SignUp/>}/>
       </Routes>
     </Router>
-    </main>
   );
 }
 
