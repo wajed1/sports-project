@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-
 function Navbar() {
   return (
       <nav className="fixed top-0 absolute w-full h-[4rem] py-4 " >
@@ -10,9 +8,9 @@ function Navbar() {
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/about">About</Link></li>
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/contact">Contact</Link></li>
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/">Log In</Link></li>
+        <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/cart">🛒</Link></li>
       </ul>
       </nav>
   );
 }
-
 export default Navbar;
