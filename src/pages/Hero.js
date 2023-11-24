@@ -15,7 +15,7 @@ function Hero() {
 
   const handleClick = () => {
     // Navigate to the /login route
-    navigate('/');
+    navigate('/login');
   };
 
   return (
