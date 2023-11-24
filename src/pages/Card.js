@@ -18,7 +18,7 @@ function Card() {
     <div className='shop'>
       <div className='shopTitle'>
         <h1>Vshop</h1>
-      </div>
+      </div>Y
       <div className='searchBarContainer'>
         <input
           type='text'
