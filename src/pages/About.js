@@ -1,5 +1,3 @@
-
-
 import Header2 from '../components/Header2';
 import StoryImage from '../images/about5.jpg'
 import VisionImage from '../images/about4.jpg'
@@ -10,9 +8,18 @@ import './About.css';
 const About = () => {
   return (
     <>
-    <Header2  className='header' title="About Us" image={image}>
-      Vshop: Harvesting Goodness, One Veggie at a Time!
+    <Header2 className="headerimg" title="" image={image} >
+
     </Header2>
+
+    <section className='slogan'>
+      <div className='slogancontainer'>
+<div className='slogancontent'>
+  <h2>
+     Harvesting Goodness, One Veggie at a Time!</h2>
+</div>
+      </div>
+    </section>
 
     <section className="about__story">
       <div className="container about__story-container">
@@ -60,4 +67,3 @@ const About = () => {
 }
 
 export default About
-

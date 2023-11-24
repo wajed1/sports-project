@@ -5,6 +5,7 @@ import { CartItem } from "./cart-item";
 import './Cart.css'
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
+import NoItemsGif from '../images/empty.gif';
 
 export const Cart =()=>{
     const { cartItems, getTotalCartAmount}=useContext(ShopContext);
@@ -58,7 +59,10 @@ export const Cart =()=>{
                 <button onClick={()=> navigate('/card')} >Continue Shopping</button>
                 <button action="POST" onClick={handleCheckout}>Checkout</button>
             </div>
-            :<h1>Your Cart is Empty</h1>}
+            :<div className="flex w-full justify-center items-center flex-col">
+            <img src={NoItemsGif} className="w-full max-w-sm"/>
+            <p className="empty">Empty Cart</p>
+          </div>}
 
         </div>
     );
