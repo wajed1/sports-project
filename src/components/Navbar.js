@@ -12,11 +12,6 @@ function Navbar() {
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/contact">Contact</Link></li>
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/">Log In</Link></li>
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/cart"><ShoppingCart size={32} /></Link></li>
-        <li class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search"
-            aria-label="Search" />
-          <button className="btn" type="submit">Search</button>
-      </li>
       </ul>
     </nav>
   );
