@@ -16,7 +16,7 @@ form{
     background-color: white;
 }
 form h3{
-    color: #555;
+    color: black;
     font-weight: 800;
     margin-bottom:20px ;
 }
@@ -85,3 +85,24 @@ form button{
     display: flex;
     flex-direction: column;
   }
+
+  .input1, .input2, .input3 {
+    padding: 10px;
+    border: 1px solid #ccc; /* Default border color */
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none; /* Remove the input focus outline */
+  
+    /* Additional styles, adjust as needed */
+  }
+ 
+.input1:focus {
+  border-color: #4285f4;
+}
+
+.input2:focus {
+  border-color: #4285f4;
+}
+.input3:focus {
+  border-color: #4285f4;
+}
