@@ -1,8 +1,9 @@
 .shopTitle {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
     font-size: 40px;
     color: white;
+    margin-bottom: 70px;
   }
   .products {
     width: 100%;
@@ -56,14 +57,19 @@
   }
 
   .searchBarContainer {
-    margin-bottom: 20px;
+    margin-left: 10px;
+    
   }
   
   .searchBarInput {
-    width: 100%;
+    width: 20%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
+  }
+  .btn{
+    height: 40px;
+    margin-left: 10px;
   }

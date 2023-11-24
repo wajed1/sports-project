@@ -10,7 +10,7 @@ import './About.css';
 const About = () => {
   return (
     <>
-    <Header2 title="About Us" image={image}>
+    <Header2 className='header' title="About Us" image={image}>
       Vshop: Harvesting Goodness, One Veggie at a Time!
     </Header2>
 

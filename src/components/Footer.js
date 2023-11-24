@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import {FaInstagram, FaFacebook,FaPhone} from 'react-icons/fa'
 
 export const Footer = () => {
   return (
@@ -15,17 +16,17 @@ export const Footer = () => {
     <li class='contact'>
         <h1>Contact Members</h1>
         <ul>
-            <li>Hadi Ghandour +96170711506</li>
-            <li>Wajed basbous +96176045923</li>
-            <li>Ahmad Dia +96170054234</li>
-            <li>Jad Abdallah +96171333931</li>
+            <li><FaPhone className='icon'/> Hadi Ghandour:  +96170711506</li>
+            <li><FaPhone className='icon'/> Wajed basbous:  +96176045923</li>
+            <li><FaPhone className='icon'/> Ahmad Dia:  +96170054234</li>
+            <li><FaPhone className='icon'/> Jad Abdallah:  +96171333931</li>
         </ul>
     </li>
     <div class='follow'>
         <h1>Follow us on</h1>
         <ul>
-        <a href=''>Instagram</a>
-        <a href=''>Facebook</a>
+        <a href=''><FaInstagram className='icon'/> Instagram</a>
+        <a href=''><FaFacebook className='icon'/>Facebook</a>
         </ul>
     </div>
 </div>
