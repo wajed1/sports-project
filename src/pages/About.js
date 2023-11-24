@@ -1,4 +1,3 @@
-
 import Header2 from '../components/Header2';
 import StoryImage from '../images/about5.jpg'
 import VisionImage from '../images/about4.jpg'

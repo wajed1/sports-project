@@ -49,7 +49,7 @@ function SignUp() {
             <button className='login-button' type='submit' onClick={submit}>Sign Up</button>
             </form>
             <p> Already have an account?</p>
-            <a className='link' href='/'>Login</a> 
+            <a className='link' href='/login'>Login</a> 
         </div>
     </section>
     );
