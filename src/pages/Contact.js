@@ -41,9 +41,9 @@ function Contact() {
         <div class='container1'>
             <form onSubmit={submit}>
                 <h3>GET IN TOUCH</h3>
-                <input type='text' name='from_name' placeholder='User name' value={username} onChange={(e) => setUsername(e.target.value)} required></input>
-                <input type='text' name='from_email' placeholder='Email Adresse' value={email} onChange={(e) => setEmail(e.target.value)} required></input>
-                <textarea name='message' rows='4' placeholder="How can we help you?" value={message} onChange={(e) => setMessage(e.target.value)}required></textarea>
+                <input className="input1" type='text' name='from_name' placeholder='User name' value={username} onChange={(e) => setUsername(e.target.value)} required></input>
+                <input className="input2" type='text' name='from_email' placeholder='Email Adresse' value={email} onChange={(e) => setEmail(e.target.value)} required></input>
+                <textarea className="input3" name='message' rows='4' placeholder="How can we help you?" value={message} onChange={(e) => setMessage(e.target.value)}required></textarea>
                 <button className="btn" type='submit'>Send Message</button>
             </form>
         </div>
