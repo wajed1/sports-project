@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PRODUCTS } from '../products';
 import { Product } from './Product';
+import { FaSearch } from "react-icons/fa";
 import './Card.css';
 
 function Card() {
@@ -18,8 +19,9 @@ function Card() {
     <div className='shop'>
       <div className='shopTitle'>
         <h1>Vshop</h1>
-      </div>Y
+      </div>
       <div className='searchBarContainer'>
+      <h2 style={{ marginRight: '8px' }}><FaSearch /></h2>
         <input
           type='text'
           placeholder='Search products...'
