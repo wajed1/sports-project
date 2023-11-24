@@ -47,7 +47,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.about_story-container, .about_mission-container{
+.about__story-container, .about__mission-container{
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 5%;

@@ -1,8 +1,8 @@
 import Header2 from '../components/Header2';
 import StoryImage from '../images/about5.jpg'
 import VisionImage from '../images/about4.jpg'
-import MissionImage from '../images/about7.avif'
-import image from '../images/headerimg2.avif'
+import MissionImage from '../images/womaneating.jpg'
+import image from '../images/headerimg5.jpg'
 import './About.css';
 
 const About = () => {
