@@ -12,6 +12,10 @@ function Navbar() {
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/contact">Contact</Link></li>
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/">Log In</Link></li>
         <li className="text-[#fff] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/cart"><ShoppingCart size={32} /></Link></li>
+        <li className="text-[#000] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/about">About</Link></li>
+        <li className="text-[#000] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/contact">Contact</Link></li>
+        <li className="text-[#000] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/">Log In</Link></li>
+        <li className="text-[#000] font-bold text-[1.1rem] cursor-pointer hover:animate-pulse "><Link className='a' to="/cart"><ShoppingCart size={32} /></Link></li>
       </ul>
     </nav>
   );
