@@ -9,7 +9,7 @@ import NoItemsGif from '../images/empty.gif';
 import delivery from '../images/deliveryy.gif'
 
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount, clearCart } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
   const navigate = useNavigate()
   const [cart, setCart] = useState([]); // Updated state for the entire cart

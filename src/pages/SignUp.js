@@ -23,7 +23,7 @@ function SignUp() {
                     alert("User already exists")
                 }
                 else if(res.data==="notexist"){
-                    history("/hero",{state:{id:username}})
+                    history("/card",{state:{id:username}})
                 }
             })
             .catch(e=>{

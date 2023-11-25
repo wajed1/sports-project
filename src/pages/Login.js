@@ -23,7 +23,7 @@ function Login() {
                         setToken(token);
                         localStorage.setItem('token', token);
                         console.log(token);
-                        history("/hero", { state: { id: username } })
+                        history("/card", { state: { id: username } })
                     }
                     else if (res.data === "notexist") {
                         alert("User did not sign up or the password is wrong")
