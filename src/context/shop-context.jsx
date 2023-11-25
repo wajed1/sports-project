@@ -11,6 +11,9 @@ const getDefaultCart = () => {
   return cart;
 };
 
+const getClearedCart=()=>{
+    return {};
+}
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
@@ -38,7 +41,7 @@ export const ShopContextProvider = (props) => {
   };
 
   const clearCart = () => {
-    setCartItems(getDefaultCart());
+    setCartItems(getClearedCart());
   };
 
   const contextValue = {
