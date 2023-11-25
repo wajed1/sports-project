@@ -1,63 +1,79 @@
 .cart {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-  }
-  .cart h1{
-    color: grey;
-    font-size:40px;
-  }
-  
-  .cartItem {
-    width: 700px;
-    height: 250px;
-    display: flex;
-    background-color: white;
-    align-items: center;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-    margin: 30px;
-  }
-  
-  .cartItem img {
-    width: 200px;
-  }
-  
-  .cartItem .description {
-    width: 100%;
-    font-size: 30px;
-  }
-  
-  .countHandler input {
-    width: 40px;
-    text-align: center;
-    font-weight: bolder;
-  }
-  .checkout{
-    margin-bottom: 50px;
-  }
-  .checkout p{
-    color: white;
-  }
-
-  .checkout button {
-    width: 150px;
-    height: 50px;
-    background-color:rgb(19, 19, 19);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .empty{
-    margin-bottom: 30px;
-    color: #78808f; /* Example color, adjust as needed */
-  font-size: 1.875rem; /* Example font size, adjust as needed */
-  font-weight: bold;
-  margin-top: 20px; /* Example margin-top, adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
-  
+
+.cart h1 {
+  color: grey;
+  font-size: 40px;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.cartItem img {
+  width: 200px;
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size: 30px;
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.checkout {
+  margin-bottom: 50px;
+}
+
+.checkout p {
+  color: dark;
+}
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.empty {
+  margin-bottom: 30px;
+  color: #78808f;
+  /* Example color, adjust as needed */
+  font-size: 1.875rem;
+  /* Example font size, adjust as needed */
+  font-weight: bold;
+  margin-top: 20px;
+  /* Example margin-top, adjust as needed */
+}
+
+.checkout_succes {
+   margin-bottom: 30px;
+  color: #78808f;
+  /* Example color, adjust as needed */
+  font-size: 1.875rem;
+  /* Example font size, adjust as needed */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
