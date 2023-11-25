@@ -33,6 +33,8 @@ export const Cart = () => {
       // Assuming you want to send the entire cart to the server
       await axios.post("http://localhost:8000/product", { cart });
 
+      clearCart();
+
       setCheckout(true);
 
     } catch (error) {
