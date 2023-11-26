@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import {BiLogoVimeo} from 'react-icons/bi'
+import SubscribeButton from './SubscribeButton';
 import './Footer.css'
 
 export const Footer = () => {
@@ -17,13 +18,7 @@ export const Footer = () => {
         </p>
         <div className='input-areas'>
           <form className='input-area'>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-             <button className='subbtn'>Subscribe</button>
+              <SubscribeButton className='subbtn'/>
 
           </form>
         </div>
@@ -70,7 +65,7 @@ export const Footer = () => {
               <BiLogoVimeo />
             </a>
           </div>
-          <small class='website-rights'>VShop © 2023</small>
+          <small class='website-rights'>VShop ©️ 2023</small>
           <div class='social-icons'>
             <a
               class='social-icon-link facebook'
@@ -118,4 +113,3 @@ export const Footer = () => {
     </div>
   );
 }
-
